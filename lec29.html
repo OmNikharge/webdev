@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font Size</title>
+    <style>
+        html{
+            font-size: 25px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .container{
+            border: 2px solid orangered;
+            /* vh and vw are viewport width and viewport height. viewport is the total display that we see on the browser*/
+            /* height: 50vh;  This tells the container to take the height of 50vh(viewport height*/
+            
+        }
+    h2{
+        text-align: center;
+    }
+    .id1{
+        font-size: 3rem; /* rem is the unit to specify nummber of times the size of the root element i.e; the browser size*/
+        border: 2px solid black;
+        padding: 3rem;  /* em is the unit to specify number of times the size of the parent container*/
+    }
+    </style>
+</head>
+<body>
+   <div class="container">
+     <h2 class="id1"> This is first heading</h2>
+       <h2 class="id2">This is second heading</h2>
+       <h2 class="id3">This is third heading</h2>
+   </div>
+</body>
+</html>

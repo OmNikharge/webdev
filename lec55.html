@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+    <style>
+        * {
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        This is about Loops
+    </div>
+    <script>
+        for (let i = 0; i < 20; i++) {
+            document.write(i)
+        }
+        let arr = ["ankush", "aditya", "Ritik", "Rahul", "Suyash"];
+
+        for (let i = 0; i < arr.length; i++) {
+            console.log("Hello " + arr[i]);
+        }
+
+        //ForEach Loop
+
+        arr.forEach(function s(val, y) { console.log(y + ": This is " + val) }) //ForEach Loop Definition: For Each Loop runs the Function once for Each Element in the Array. It is used particularly for Arrays
+
+
+
+        //This is For of Loop
+        for (x of arr) {
+            console.log(x + " Is a good  boy");
+        } //This loop is Similar to ForEach Loop
+
+
+        //Objects
+        let object = {
+            name: "OM",
+            surname: "NIkharge",
+            love: "Cricket",
+            proffesion: "Entreprenuer"
+        }
+
+        //This is for in loop which is used to iterate objects
+
+        for (x in object) {
+            console.log(`The ${x} of employee is ${object[x]}`);
+        }  //This For Lop is to iterate Objects in Javascript 
+        for (v in object) {
+            console.log(`THe ${v} of legend is ${object[v]}`);
+        }
+
+
+
+        //While Loop in Javascript
+        let i = 0;
+        while (i < 4) {
+            console.log(`${i} is less than four`)
+            i++
+        }
+
+        //Do While Loop in Javascript
+
+        let j = 34;
+        do {
+            console.log(`${j} is less than 40`)
+            j++;
+        } while (j < 40)
+        
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handling in Javascript</title>
+    <style></style>
+</head>
+<body>
+   <div class="container">
+       <h1>This is Heading</h1>
+       <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit consectetur possimus pariatur assumenda in, eveniet recusandae inventore, sequi nesciunt accusamus rerum quo iure non amet sed sunt, vel veritatis suscipit. Odio exercitationem sit hic dolorem quas fugit deleniti officia ipsum ad molestiae, totam maxime accusantium tenetur natus ducimus illum? Maiores, ratione qui consequuntur autem ipsam tenetur sint. Eum blanditiis accusamus amet iusto soluta consectetur qui et. Repellendus reprehenderit pariatur, id perferendis inventore dignissimos. Saepe, nesciunt perferendis. Ratione aliquam voluptates optio excepturi velit vitae esse obcaecati, distinctio inventore, nesciunt voluptas possimus voluptate aperiam, quis quae nobis aspernatur sit? Iure, tempore. Illum.</p>
+   </div> 
+
+   <!-- Listeneing CLick Event  -->
+
+   <button id="btn" onclick="hide()">Show/Hide</button>
+   <script>
+   
+
+   //Mouseover Event Listener
+//    let y= document.getElementById('para');
+//    y.addEventListener('mouseout',function mover(){
+//        alert("YOu have dgjdskghdlgh")
+//    });
+      
+
+   
+    
+       function hide(){
+          
+           let y= document.getElementById('para');
+           
+           if(y.style.display !='none'){
+               y.style.display='none'
+           }else
+           {
+               y.style.display='block'
+           }
+       }
+       
+   </script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is Forms Tutorial</title>
+</head>
+
+<body>
+    <h2>This is forms tutorial</h2>
+    <hr>
+    <form action="backend.php">
+        <div>
+            <label for="one">Name:</label><input type="text" name="myName" id="one">
+        </div>
+        <br>
+        <div>
+            <label for="five">Gender:</label><input type="radio" name="myGender" id="five">Male <input type="radio"
+                name="myGender">Female
+        </div>
+        <br>
+        <div>
+            <label for="four">Date of Birth:</label><input type="date" name="myDate" id="four">
+        </div>
+        <br>
+        
+        <div>
+            <label for="three">Email:</label><input type="email" name="myEmail" id="three">
+        </div>
+        <br>
+
+
+        <div>
+            <label for="two">Preffered Role</label> <input type="text" name="myRole" id="two">
+        </div>
+        <br>
+
+
+        <div>
+            <label for="six">Expected Salary:</label> <input type="number" name="mySalary" id="six">
+        </div>
+        <br>
+        <div>
+            <label for="seven">Graduation Completed:</label> <input type="checkbox" checked id="seven" name="myGraduation">
+        </div>
+        <br>
+        <div>
+            <label for="eight">Preffered Location</label>
+            <select name="myLocation" id="eight">
+                <option value="Mumbai" selected>Mumbai</option>
+                <option value="Pune">Pune</option>
+                <option value="Delhi NCR">Delhi NCR</option>
+                <option value="Gurgaon">Gurgaon</option>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Bangalore">Bangalore</option>
+            </select>
+        </div>
+        <br>
+        <div>
+
+            <input type="submit" value="Submit">
+        </div>
+        <br>
+        <div>
+
+            <input type="reset" value="Reset">
+        </div>
+        <hr>
+
+    </form>
+
+
+</body>
+
+</html>

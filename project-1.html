@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Om's Fitness</title>
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <style>
+     /* .header{
+         background-color: #b0a27b; 
+      } */
+      body{
+        background: url(home.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        color: white;
+        font-family: 'Catamaran', sans-serif;
+      }
+    
+       .left{
+        position: absolute;
+         left: 50px;
+         top: 2px;
+         display: inline-block;
+         font-size: 29px;
+         font-weight: 800;
+         
+         
+        
+       }
+       .mid{
+         display: block;
+         width: 45%;
+         margin: 20px auto;
+        
+          border-bottom: 2px solid #b0a27b; 
+         
+       }
+       .right{
+         position: absolute;
+         right: 50px;
+         top: 42px;
+         display: inline-block;
+          }
+          .right button{
+            border: 2px solid #b0a27b;
+          }
+
+       .navbar{
+         display: inline-block;
+         margin-left: 60px;
+       }
+       .navbar li{
+         display: inline-block;
+         font-size: 21px;
+        
+       }
+       .navbar li a{
+         color: white;
+        padding: 34px 15px;
+         text-decoration: none;
+       }
+
+       .navbar li a:hover{
+            text-decoration: underline;
+            color: grey;
+
+
+       }
+      .left img{
+        width: 110px;
+        filter: invert(100%);
+        margin-left: 18px;
+        
+      }
+      .logotext{
+        font-size: 21px;
+        text-align: center;
+        position: relative;
+        margin-left: 5px;
+        right: 5px;
+        bottom: 15px;
+        line-height: 0%;
+      }
+      .reach{
+        padding: auto 155px;
+      }
+      .btn{
+        color: white;
+        background: transparent;
+        margin: 0px 5px;
+        padding: 5px;
+        font-size: 21px;
+        border-radius: 10px;
+        border: transparent;
+        font-family: 'Catamaran', sans-serif;
+        cursor: pointer;
+      }
+      .btn:hover{
+        background-color: grey;
+      }
+      .container{
+        padding: 50px;
+    margin-top: 141px;
+    margin-left: 132px;
+    width: 34%;
+    border-radius: 10px;
+    border: 7px solid #f1f0dd;
+
+      }
+    .headline{
+      color: white;
+      text-align: center;
+      font-family: 'Catamaran', sans-serif;
+      font-size: 31px;
+    }
+    .form-group input{
+      display: block;
+      margin: 15px auto;
+      width: 300px;
+      border:2px solid black;
+      border-radius: 4px;
+      font-family: 'Catamaran', sans-serif;
+      font-size: 20px;
+      padding: 3px;
+    }
+    .submitdiv input{
+      background-color: orangered;
+      border: 2px solid orangered;
+      color: white;
+      font-family: 'Catamaran', sans-serif;
+      border-radius: 4px;
+      display: block;
+      margin: 25px auto;
+      width: 300px;
+      padding: 3px;
+      font-size: 22px;
+
+    }
+    .submitdiv input:hover{
+      background-color: rgb(156, 69, 38);
+      text-decoration: underline;
+      border-color: rgb(156, 69, 38);
+    }
+      
+    </style> 
+    
+    
+  
+</head>
+
+
+<body>
+   <header class="header">
+     <!-- Left box for logo -->
+       <div class="left">
+          <img src="logo.png" alt=" brand's logo">
+          <div class="logotext">Om's Fitness</div>
+       </div>
+       <!-- mid box for navigation menu -->
+       <div class="mid">
+        <ul class="navbar">
+          <li><a href="#" >Our Products</a> </li>
+          <li><a href="#">Calorie Calculator</a> </li>
+          <li><a href="#"> Fitness Calculator</a></li>
+          <li><a href="#">Pricing</a></li>
+        </ul>
+      
+       </div>
+       <!-- right box for buttons -->
+       <div class="right">
+         <button class="btn">Call us</button>
+         <button class="btn">Email us</button>
+       </div>
+   </header>
+   <div class="container">
+     <h2 class="headline">Join the best Gym in Mumbai Now</h2>
+     <form action="homeform.html">
+       <div class="form-group">
+         <input type="text" placeholder="Enter Your Name">
+       </div>
+       <div class="form-group">
+        <input type="text" placeholder="Enter Your E-mail">
+       </div>
+       <div class="form-group">
+        <input type="text" placeholder="Enter your Mob.no.">
+       </div>
+       <div class="form-group">
+        <input type="text" placeholder="Enter Your Address">
+       </div>
+       <div class="submitdiv">
+         <input type="submit" class="submit-btn">
+       </div>
+     </form>
+   </div>
+    
+</body>
+</html>

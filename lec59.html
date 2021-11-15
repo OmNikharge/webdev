@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date and Time in Javascript</title>
+    <style>
+        *{
+            font-size: 50px;
+            color: crimson;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        #time{
+            background-color: darkkhaki;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <span id="time">
+           See Time Here:
+        </span>
+    </div>
+    <script>
+        console.log("This is date and Time Tutorial");
+        // let dt = new Date();
+       
+       
+        // let newD= new Date("2021-09-15");
+        // console.log(newD);
+
+
+         let date2 = new Date(); //initalizing the Constructor "Date"
+        let minutes= date2.getMinutes();
+        console.log("the date is",minutes); //Accessing the methods of the constructor "date()" through it's object "date2"
+
+
+
+        // This is how constructor funcion works
+        // function Hello(x,y,z){
+        //     this.om=x;
+        //     this.sai=y;
+        //     this.saish=z;
+        // }
+        // let a1= new Hello(2,3,4);
+        // console.log(a1);
+
+
+         setInterval(currentDate, 1000);
+
+         function currentDate(){
+             time.innerHTML= new Date();
+         }
+      
+
+
+
+    </script>
+</body>
+</html>

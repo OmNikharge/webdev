@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In-depth in Selectors</title>
+</head>
+<style>
+     div > p{
+        background-color: darkorange; /* The ">" symbol is used to target the instant successor of an element using selector*/
+     }
+   ul{
+       background-color: darkseagreen; } /*Directly inside elements can also be targetted using selectors*/
+   
+       div + p{
+           color: rgb(14, 156, 14);  /*Aise p ko affect karo jiska pichla element div ho """"Firse Dhangse padho"""*/
+       }
+
+</style>
+<body>
+    <div class="container">
+        <div class="box1">
+            <p>This is the layer2 paragraph</p>
+            <ul>
+                <li><p>This is a paragraph inside ul</p></li>
+            </ul>
+        </div>
+            <p> This is layer3 paragraph</p> 
+    </div>
+    <p>This is outermost paragraph</p>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Transform</title>
+    <style>
+      
+       .container{
+           display: flex;
+           background-color: darkcyan;
+        justify-content: center;
+         align-items: center;
+        
+       }
+     .box{
+         height: 200px;
+         width: 200px;
+         border-radius: 4px;
+         background-color: slateblue;
+         border: 2px solid blue;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         margin: 8px;
+         transition: all .5s 0.3s;
+    
+     }
+      .box:hover{
+        /* transform: rotate(360deg);    */
+        transform: skew(40deg);
+        background-color: darkgoldenrod;
+        font-size: 30px;
+        transform: scale(2);  /*badha ho jayega*/
+        font-weight: bold;
+      }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            This is my box
+        </div>
+    </div>
+</body>
+</html>

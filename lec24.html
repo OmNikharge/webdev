@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Property</title>
+    <style>
+    *{box-sizing: border-box;}
+    header{
+       width: 100%;
+       background-color: rgb(0, 0, 0);
+       border: 2px solid rgb(255, 255, 255);
+       border-radius: 20px;
+       margin: auto;
+       
+    }
+    .logo{
+        display: block; /*You need to use this property to turn inline elements into block elements*/
+        margin: auto;
+        width: 34px;
+    }
+    h2{
+        text-align: center;/*Alligns the text to the center of the web page*/
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin: auto;
+        color: white;
+    }
+    .box{
+        border: 3px solid rgb(65, 79, 82);
+        background-color: burlywood;
+        padding: 30px;
+        margin: 8px;
+        width: 446px;
+        border-radius: 20px;
+        display: inline-block;
+        box-sizing: border-box;
+    }
+    .headline{
+        background-color: darkorange;
+    }
+    body{
+        background-color: rgb(238, 180, 20);
+    }
+    .container{
+        margin: auto;
+    }
+
+    </style>
+</head>
+<body>
+    <header class=top>
+    <img class="logo" src="https://www.codewithharry.com/assets/img/logo.png"> 
+    <h2>Harry's Blog</h2>
+    </header>
+    <div class="contaier">
+        <div class="box">
+            <h3 class="headline">India</h3>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa rerum ducimus vel, necessitatibus nobis nostrum. Beatae possimus debitis, quo consequatur nam explicabo alias dolorem omnis laborum, error, dolor autem laudantium doloremque saepe repellendus similique.
+            </p>
+        </div>
+        <div class="box">
+            <h3 class="headline">Australia</h3>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa rerum ducimus vel, necessitatibus nobis nostrum. Beatae possimus debitis, quo consequatur nam explicabo alias dolorem omnis laborum, error, dolor autem laudantium doloremque saepe repellendus similique.
+            </p>
+        </div>
+        <div class="box">
+            <h3 class="headline">New Zealand</h3>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa rerum ducimus vel, necessitatibus nobis nostrum. Beatae possimus debitis, quo consequatur nam explicabo alias dolorem omnis laborum, error, dolor autem laudantium doloremque saepe repellendus similique.
+            </p>
+        </div>
+        <div class="box">
+            <h3 class="headline">England</h3>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa rerum ducimus vel, necessitatibus nobis nostrum. Beatae possimus debitis, quo consequatur nam explicabo alias dolorem omnis laborum, error, dolor autem laudantium doloremque saepe repellendus similique.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#{title}</title>
+    style 
+       include ../public/style.css
+      
+</head>
+<body>
+    
+    <!-- This is a pug template -->
+     <!-- |#{content} -->
+    <nav>
+       <ul>
+         <li><a href="/">Home</a> </li>
+         <li><a href="/">About</a></li>
+         <li><a href="/">Services</a></li>
+         <li><a href="/">Contact Us</a></li>
+       </ul>  
+    </nav>
+    <div class="container">
+        <h2>Grab the best ever deals on our <span>Premium</span>  Services</h2>
+    </div>
+    <div class="form">
+      <form action="/" id="contact" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Rohit Sharma">
+        <label for="age">Age:</label>
+        <input type="number" id="age" placeholder="25">     
+        <label for="prof">Profession:</label>
+        <input type="text" id="profession" placeholder="Eg. Web Developer">   
+        <label for="address">Address:</label>
+        <textarea id="textarea" name="textarea" rows="4" cols="50" placeholder="Eg. 263, Ajgaon, Bhomwadi, ajgaon, 416518">
+             
+        </textarea>
+         <input type="submit" class="butt" name="submit">    
+    </form>   
+    </div>
+         
+</body>
+   
+</html>

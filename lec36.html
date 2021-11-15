@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>keyframes and animation</title>
+    <style>
+        .container{
+            background-color: cadetblue;
+        }
+        .txt{
+            
+            animation-name: om;
+            animation-duration: 3s;
+            animation-iteration-count: 4;
+            animation-delay: 3s;  /*States how many number of times the animation will be played in loop*/
+           /* animation-iteration-count: infinite; Animation will be played infinitely*/
+         /*   animation-fill-mode: forwards;  The animation will stop in its last stage and will be freezed in the same state*/
+          /*  animation-timing-function: ease-in; Shuru me tez badme fast and ease-out matlab shuru me fast and badme tez*/
+
+            /*animation-delay: 5s; the animation will start only after the dealy of this particulat secs*/
+
+
+            /*There are many more animation attributes which you can search for and apply*/
+            
+
+
+
+
+            
+
+            /***********Animation Shorthand: 
+                animation-name animation duration animation timing function(ease inn,etc) animation-delay animation-iteration count animation-fill mode;  ********/
+            animation: om 3s ease-in 3s 4 none; 
+        }
+         @keyframes om{
+            from{
+                font-size: 30px;
+                color: black;
+            }
+            to{
+               font-size: 60px;
+               color: rgb(221, 224, 21);
+
+            }
+        } 
+
+        .box{
+            height: 300px;
+            width: 300px;
+            background-color: green;
+
+
+            animation-name: om1;
+            animation-duration: 3s;
+            animation-delay: 3s;
+            animation-iteration-count: 4;
+            position: absolute;
+            animation-direction: alternate-reverse; /*This will make it play reverse at alternate times*/
+        }
+
+        @keyframes om1{
+            0%{
+                top: 0px;
+                left: 0px;
+            }
+            25%{
+                top: 250px;
+                left: 0px;
+            }
+            50%{
+                left: 250px;
+                top: 250px;
+            }
+            75%{
+                top: 0px;
+                left: 250px;
+            }
+            100%{
+                top:0px;
+                left:0px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+           <div class="txt"> This is a box</div>   
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Box Model</title>
+    <style>
+        .container {
+            background-color:rgb(222 255 40);
+            border: 3px solid rgb(3 97 255);
+            float: left;
+            
+            /*we can set margin/padding left right top and bottom
+       padding-left: 22px;
+       padding-right: 22px;
+       padding-top: 40px;
+       padding-bottom: 50px;*/
+
+            /* margin/padding: 20px 40px 50px 60px; padding top right bottom left*/
+            margin: 25px 25px;
+            padding: 20px 40px;
+            box-sizing: border-box;
+
+
+            /* margin/padding x(top,bottom) y(left,right)*/
+            border-radius: 55px;
+            width: 409px;
+        }
+
+        * {
+            box-sizing: border-box;
+            /*Doing with *Applies to all the elements*/
+        }
+        body{
+            background-color:#892fff;}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero modi cupiditate, est animi dolorem
+            ullam totam, nesciunt ab, vitae beatae sapiente culpa minima.</p>
+    </div>
+
+    <div class="container">
+        <h3>This is my second heading</h3>
+        <p id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero modi cupiditate, est animi dolorem
+            ullam totam, nesciunt ab, vitae beatae sapiente culpa minima.</p>
+    </div>
+
+    <div class="container">
+        <h3>This is my third heading</h3>
+        <p id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero modi cupiditate, est animi dolorem
+            ullam totam, nesciunt ab, vitae beatae sapiente culpa minima.</p>
+    </div>
+</body>
+
+</html>
